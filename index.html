@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech and Speech to Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">Text To Speech and Speech To Text Converter</h1>
+    <div id="Box">
+    <select id="languageSelect" onchange="changeLanguage()">
+        <option value="en-IN">English (India)</option>
+        <option value="hi-IN">हिन्दी (India) - Hindi</option>
+        <option value="bn-IN">বাংলা (ভারত) (India) - Bengali</option>
+        <option value="te-IN">తెలుగు (India) - Telugu</option>
+        <option value="ta-IN">தமிழ் (India) - Tamil</option>
+        <option value="mr-IN">मराठी (India) - Marathi</option>
+        <option value="ur-IN">اردو (India) - Urdu</option>
+        <option value="gu-IN">ગુજરાતી (India) - Gujarati</option>
+        <option value="kn-IN">ಕನ್ನಡ (India) - Kannada</option>
+        <option value="ml-IN">മലയാളം (India) - Malayalam</option>
+        <option value="pa-IN">ਪੰਜਾਬੀ (India) - Punjabi</option>
+        <option value="or-IN">ଓଡ଼ିଆ (India) - Odia</option>
+        <option value="as-IN">অসমীয়া (India) - Assamese</option>
+        <option value="mr-IN">मराठी (India) - Marathi</option>
+        <option value="ne-IN">नेपाली (India) - Nepali</option>
+        <option value="kok-IN">कोंकणी (India) - Konkani</option>
+    </select>
+    <div id="output"></div>
+    <button id="startlisten"class="button" >Start Listening</button>
+    <button id="stoplisten" class="button">Stop Listening</button>
+    
+   <div id="text"> <textarea id="textArea" placeholder="Enter the text here..."></textarea></div>
+    <button id="speak">Speak</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
